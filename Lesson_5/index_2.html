@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <h1 id="main_header">This is page for task2</h1>
+<ul>
+    <li class="linkList listElement1"><a href="#">link1</a></li>
+    <li class="linkList listElement2"><a href="#">link2</a></li>
+    <li class="linkList listElement3"><a href="#">link3</a></li>
+</ul>
+<h3 class="sub-header">content 1 segment</h3>
+<div class="content_1">
+    <p class="text_segment text1">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam amet at autem cumque distinctio,
+        dolorem
+        eligendi eum eveniet facere inventore ipsa minus pariatur repellendus sequi sit veniam voluptatum.
+        Fugit,
+        soluta?</p>
+
+</div>
+<h3 class="sub-header">content 2 segment</h3>
+<div class="content_2">
+    <p class="text_segment text2">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam beatae, exercitationem modi mollitia
+        omnis
+        possimus quam rerum sequi temporibus tenetur! Accusantium ad commodi eveniet excepturi laboriosam quis
+        quisquam sint temporibus.</p>
+</div> -->
+
+
+
+
+
+<!-- 
+<form id = "fName" action="index_2.html" >
+<input type="text" name = "name">
+<button>send</button>
+</form> -->
+
+
+
+<form id = "f" action="">
+    <input type="text" name= "product"> <br>
+    <input type="text" name="quantity"> <br>
+    <input type="text" name="price"> <br>
+    <input type="text" name="picture"> <br>
+    <button>save</button>
+</form>
+
+<a href="list.html"> На сторінку товарів</a>;
+
+<script>
+
+    // Взяти файл template_2.html та працювати в ньому
+// 1) Напишіть код, який :
+//     a) змінює колір тексту елемнту з ід main_header на назву групи в якій ви вчитесь (mon-year)
+    // let mainHeader = document.getElementById('main_header');
+    // mainHeader.innerText = 'april-2021';
+    // mainHeader.style.color = 'pink';
+    // console.log(mainHeader);
+
+    // // b) робить шириниу елементу ul 400px
+//     let widthUl = document.getElementsByTagName('ul');
+//     for(let ul of widthUl){
+//         ul.style.width = '400px'
+//     console.log(ul);
+// };
+//     console.log(widthUl);
+
+//     c) робить шириниу всіх елементів з класом linkList шириною 50%
+
+// let linkList = document.querySelectorAll('.linkList');
+// console.log(linkList);
+// for (let link of linkList){
+//     link.style.width = '50%';
+//    };
+
+ //     d) отримує текст який зберігається в елементі з класом listElement2
+// let listElement2 = document.querySelector('.listElement2');
+// console.log(listElement2);
+
+//     e) отримує всі елементи li та змінює ім колір фону на сірий
+// let li = document.querySelectorAll('li');
+// for(let itemLi of li){
+//     itemLi.style.backgroundColor = 'silver';
+// console.log(itemLi);
+// };
+
+//     f) отримує всі елементи 'a' та додає їм клас anchor
+//     g) отримує всі елементи 'a' та у випадку, якщо текстовий контен елементу дорівнює link3, змінює йому розмір тексту на 40 пікселів
+//     h) отримує всі елементи 'a' та додає їм клас element_XXX. Де XXX - текстовий контент елементу a
+
+// let a = document.getElementsByTagName('a');
+// for (let item_a of a){
+//     item_a.classList.add('anchor', `element_${item_a.textContent}`);
+// if (item_a.textContent == 'link3'){
+//     item_a.style.fontSize = '40px';
+// }
+// };
+
+//     i) отримує всі елементи 'sub-header' та змінює колір фону. Фон отримати з prompt()
+//     j) отримує всі елементи 'sub-header' та змінює колір тексту у видаку якщо текст елемнту = content 2 segment . Колір отримати з prompt()
+
+// let subHeader = document.getElementsByClassName('sub-header'); 
+// let colorMain = prompt('Main color');
+// let colorText = prompt('Text color');
+// for (let item of subHeader){
+//     item.style.backgroundColor = colorMain;
+//       if (item.textContent == 'content 2 segment'){
+//         item.style.color = colorText;
+//     }
+// }
+
+//     k) отримує елемент з класом content_1 та заміняє  в ньому теkст на довільний. Текст отримати з prompt()
+// let content1 = document.querySelector('.content_1');
+// let newText = prompt('enter any text');
+
+// content1.innerText = newText;
+// console.log(content1);
+
+//     l) отримати елементи p та змінити їм padding на 20px
+
+// let p = document.getElementsByTagName('p');
+// for (let item of p){
+//     item.style.padding = '20px'
+// };
+
+// //     m) отримати елементи з класом text2 та змінити їм текст на назву групи (mon-year)
+// let text2 = document.getElementsByClassName('text2');
+// for(let text of text2){
+//     text.innerText = 'april-2021'
+    
+// };
+// console.log(text2);
+
+
+
+
+// 2. Створити форму з інпутом для введення ім'я, та action="index2.html".
+// При відправці данних з форми, зберігати ім'я в localstorage, та переходити на index2.html.
+// let fName = document.forms.fName;
+
+// fName.addEventListener('submit', (event)=>{
+//     let name = fName.name.value;
+//     let jsonname = JSON.stringify(name);
+//     localStorage.setItem ('name',jsonname)
+// })
+
+// На index2.html виводити записане в localstorage ім'я в div
+
+// let x = localStorage.getItem('name');
+// let y = JSON.parse(x);
+// console.log(y);
+// let div = document.createElement('div');
+// div.innerText = `${y}`;
+// document.body.appendChild(div);
+
+
+
+
+// 3. Імітуємо наповнення інтернет магазину товарами :
+// Створити форму з наступними полями :
+// - назва товару
+// - кількість товару
+// - ціна товару
+// - картинка товару (посилання з інтернету)
+// Зберігати товари в масив в локалсорадж. При збережені товару з форми, action не повинно відбуватись.
+// створити елемент <a href='list.html'> На сторінку товарів</a>, та list.html, при переході на який відобразити на сторінці всі товари.
+// На сторінці  list.html побудувати кнопку яка видаляє всі товари з корзини та локалстораджа.
+
+
+let f = document.forms.f;
+let arr = [];
+
+const store = localStorage.getItem('products')
+if(store) arr = JSON.parse(store);
+
+f.addEventListener('submit', (e)=>{
+    e.preventDefault();
+let prodInfo = {
+    product: f.product.value,
+    quantity : f.quantity.value,
+    price: f.price.value,
+    picture: f.picture.value
+};
+
+arr.push(prodInfo);
+let jsonArr = JSON.stringify(arr);
+localStorage.setItem('products', jsonArr);
+   location.reload()
+});
+
+</script>
+    
+
+ 
+
+</body>
+</html>

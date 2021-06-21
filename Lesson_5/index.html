@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson_5JS</title>
+</head>
+<body>
+         <p id="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis cupiditate deleniti
+        molestias mollitia pariatur porro saepe! Dolorem eaque earum eligendi, iste maxime molestias quam vitae.
+        Dolore hic in quae sed.
+    </p>
+    
+    <div id="rules" class="fc bp">
+        Первое правило Бойцовского клуба: никому не рассказывать о Бойцовском клубе. Второе правило Бойцовского
+        клуба: никогда никому не рассказывать о Бойцовском клубе. Третье правило Бойцовского клуба: в схватке
+        участвуют только двое. Четвертое правило Бойцовского клуба: не более одного поединка за один раз
+    </div>
+    
+    <ul>
+        <li class="fc_rules rule1">Первое правило Бойцовского клуба: никому не рассказывать о Бойцовском клубе.</li>
+        <li class="fc_rules rule2">Второе правило Бойцовского
+            клуба: никогда никому не рассказывать о Бойцовском клубе
+        </li>
+        <li class="fc_rules rule3">Третье правило Бойцовского клуба: в схватке
+            участвуют только двое.
+        </li>
+        <li class="fc_rules rule4">Четвертое правило Бойцовского клуба: не более одного поединка за один раз</li>
+    </ul>
+
+    <script> 
+    let content = document.getElementById('content');
+    console.log(content);
+    content.innerText = '«Бійці́вський клуб» (англ. Fight Club) — культовий американський художній фільм 1999 року, екранізація однойменного роману Чака Поланіка, опублікованого 1996 року. Ідея проєкту належала продюсеру Лорі Зіскін, яка залучила до нього сценариста Джима Ульса і режисера Девіда Фінчера. Головні ролі в картині виконали актори Бред Пітт, Едвард Нортон і Гелена Бонем Картер.';
+
+
+    let rules = document.getElementById ('rules');
+    console.log(rules);
+    rules.innerText = 'За словами режисера, жанр фільму можна визначати як «чорна комедія» з елементами соціальної сатири (фільм неодноразово порівнювався з такими класичними стрічками як «Випускник» і «Бунтівник без причини»). Основна тема фільму, згідно зі задумом авторів, полягає в конфлікті молодого покоління і системи цінностей споживацького суспільства, втіленому в метафорі фізичного насильства. Безіменний головний герой картини (Едвард Нортон) є звичайним пересічним обивателем, який разом зі своїм приятелем Тайлером Дерденом (Бред Пітт) організовує підпільний бійцівський клуб.';
+
+    let allElements = document.body.style.backgroundColor = 'red';
+    let allElementsColor = document.body.style.color = 'blue';
+   
+    console.log(allElements);
+    console.log(allElementsColor);
+
+    let idRules = document.querySelectorAll('#rules');
+    console.log(idRules);
+    let classFcRules = document.querySelectorAll('.fc_rules');
+    for(let item of classFcRules){
+        item.style.color = 'white';
+        console.log(item);
+    }
+    console.log(classFcRules);
+
+   
+
+
+    </script>
+
+   
+</body>
+</html>
